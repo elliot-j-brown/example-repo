@@ -1,0 +1,27 @@
+# Project metadata
+[project]
+name = "myproject"
+version = "0.1.0"
+requires-python = ">=3.13"
+
+# Runtime dependencies
+dependencies = [
+    "pytest",
+    "black",
+    "ruff",
+]
+
+# Development dependencies (only needed when building the software)
+[project.optional-dependencies]
+dev = [
+    
+]
+
+# Build dependencies
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+# Source code folder location
+[tool.setuptools.packages.find]
+where = ["src"]
